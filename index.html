@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
     
 </head>
 <body>
@@ -17,46 +18,47 @@
     
     <div id="nav" class="nav-bk4" >
     <a data-screen = "home">Home</a> |
-    <a data-screen = "search">Search</a> |
+    <a data-screen = "oSearch">Search</a> |
     <a data-screen = "map">Map</a> |
     <a data-screen = "about">About</a> 
     </div> 
     
     <div id= "windows">
-        <div class="screen" id="home">
-        
+<!--     Home     -->        <div class="screen" id="home">
+        Hello World!
         </div>
-        <div class="screen" id="search" >
+<!--     Search     -->        <div class="screen" id="oSearch">
             <form>Select at least one option to search:
-                <select name="Street Number/Name" id="nn">
-                    <option></option>
+                <select name="Community Area Name" id="commN">
+                    <option id="option1"></option>
                 </select>
-                <select name="Area Name" id="area">
-                    <option></option>
+                <select name="Area Name" id="propT">
+                    <option id="option2"></option>
                 </select>
-                <select name="Zip Code" id="zip">
-                    <option></option>
+                <select name="Zip Code" id="manaC">
+                    <option id="option3"></option>
                 </select>
-            </form> 
+            </form>
             <button id="search">
                 Search    
             </button>
-        </div>
-
-        <div class="screen" id="map">City-Owned Land Inventory position map
-    
         
-        </div>2
+            <div id="data" >
+                <lo></lo>
+        </div>
+        
+        </div>
+<!--     Map     -->        <div class="screen" id="map">
+        
+        </div>
     
-    <div class="screen" id="about">
+<!--     About     -->           <div class="screen" id="about">
         This app is build as a class project. <br>
         It uses a JavaScript API to access Google maps: "The Google Maps Platform is a set of APIs and SDKs that allows developers to embed Google Maps into mobile apps and web pages, or to retrieve data from <a href= "https://developers.google.com/maps/documentation/javascript/overview">Google Maps</a>."
     <br> Danny Rodriguez
     </div>
     
 </div>
-  
-    
-
+<script src="myScript.js"></script>
 </body>
 </html>
