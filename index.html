@@ -5,6 +5,10 @@
   <script src="https://unpkg.com/material-components-web@10.0.0/dist/material-components-web.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> <!-- Map --> 
+  <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script> <!-- Include Dexie -->
+  <link rel="manifest" href="manifest.json"> <!-- manifest -->
+  <link rel="sw" href="sw.js"> <!-- service worker -->
+
    
   <style>
     :root{
@@ -90,7 +94,7 @@
                     <option></option>
                 </select>
             </form>
-            <button class="mdc-button foo-button" id="search">
+            <button class="mdc-button foo-button" id="search save">
               <div class="mdc-button__ripple"></div>
               <span class="mdc-button__label">Search</span>
             </button>
@@ -139,6 +143,16 @@
   <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd4VtpDMHsk-L1xz8KxLdbYffUwNSpA7Y&callback=initMap&libraries=&v=weekly"
       async>
+      
+    </script>
+    
+    <script>
+        // Dexie db database
+          var db = new Dexie("friend_database");
+          db.version(1).stores({
+              friends: 'name,shoeSize'
+          });
+        
     </script>
 
 </body>

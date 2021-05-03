@@ -1,5 +1,6 @@
-// Creating Top-nav-bar
+// Creating Top-nav-bar /dexie
 mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+
 const listEl = document.querySelector('.mdc-drawer .mdc-list');
 const mainContentEl = document.querySelector('main');
 const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
@@ -123,6 +124,17 @@ document.querySelector("#home").style.display = "block";
                                                       
     });
 
+// Dexie
+
+// document.querySelector('#save').addEventlistener("click", (e) =>{
+//     let value1 = document.querySelector("select").value;
+//     let value2 = document.querySelector("radio").value;
+//     let value3 = document.querySelector("input").value;
+//     db.names.put({name: value, date: new Date()})
+//     .then((item) => {
+        
+//     })
+// })
 
 
 
